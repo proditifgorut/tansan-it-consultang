@@ -56,7 +56,7 @@
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="#home" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('home')">Beranda</a>
                     <a href="#about" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('about')">Tentang</a>
-                    <a href="#services" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('services')">Layanan</a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-primary-600 transition-colors">Layanan</a>
                     <a href="#industries" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('industries')">Industri</a>
                     <a href="#cases" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('cases')">Studi Kasus</a>
                     <a href="#packages" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('packages')">Paket</a>
@@ -77,7 +77,7 @@
                 <div class="flex flex-col space-y-3">
                     <a href="#home" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('home')">Beranda</a>
                     <a href="#about" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('about')">Tentang</a>
-                    <a href="#services" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('services')">Layanan</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary-600 transition-colors">Layanan</a>
                     <a href="#industries" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('industries')">Industri</a>
                     <a href="#cases" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('cases')">Studi Kasus</a>
                     <a href="#packages" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('packages')">Paket</a>
@@ -228,87 +228,95 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Preview Section -->
     <section id="services" class="section-padding bg-gray-50">
         <div class="container-custom">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-4xl font-bold mb-6">Layanan Konsultasi IT & Implementasi Odoo</h2>
                 <p class="text-xl text-gray-600">
-                    Kami menawarkan 20+ layanan konsultasi berbasis Odoo untuk membantu bisnis Anda bertransformasi secara digital, efisien, dan scalable.
+                    Kami menawarkan 11+ layanan konsultasi berbasis Odoo untuk membantu bisnis Anda bertransformasi secara digital, efisien, dan scalable.
                 </p>
             </div>
             
-            <!-- Service Filters -->
-            <div class="flex justify-center mb-12">
-                <div class="flex flex-wrap gap-2">
-                    <button class="filter-btn bg-primary-600 text-white px-4 py-2 rounded-lg transition-colors" onclick="filterServices('all')">Semua</button>
-                    <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition-colors" onclick="filterServices('consulting')">Consulting</button>
-                    <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition-colors" onclick="filterServices('development')">Development</button>
-                    <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition-colors" onclick="filterServices('support')">Support</button>
-                </div>
-            </div>
-            
-            <!-- Services Grid -->
+            <!-- Services Preview Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="consulting">
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg">
                     <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                         <span class="text-2xl">🏢</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Implementasi Odoo Lengkap</h3>
                     <p class="text-gray-600 mb-4">Solusi end-to-end dari analisis bisnis hingga go-live dengan training komprehensif.</p>
-                    <span class="text-primary-600 font-medium">Mulai dari 6 minggu</span>
-                </div>
-                
-                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="development">
-                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">⚙️</span>
+                    <div class="flex justify-between items-center">
+                        <span class="text-primary-600 font-medium">Mulai Rp 75 juta</span>
+                        <span class="text-sm text-gray-500">8-12 minggu</span>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Custom Module Development</h3>
-                    <p class="text-gray-600 mb-4">Bangun fitur khusus sesuai kebutuhan bisnis unik perusahaan Anda.</p>
-                    <span class="text-primary-600 font-medium">Mulai dari 2 minggu</span>
                 </div>
                 
-                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="consulting">
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Paket UMKM Digital</h3>
+                    <p class="text-gray-600 mb-4">Solusi ERP terjangkau (Sales, Purchase, Inventory, Accounting, CRM) untuk UMKM.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-accent-600 font-medium">Mulai Rp 25 juta</span>
+                        <span class="text-sm text-gray-500">4-6 minggu</span>
+                    </div>
+                </div>
+                
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg">
                     <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                         <span class="text-2xl">🛒</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Integrasi E-commerce & Payment</h3>
                     <p class="text-gray-600 mb-4">Sambungkan Odoo ke Shopee, Tokopedia, dan gateway payment Midtrans.</p>
-                    <span class="text-primary-600 font-medium">Mulai dari 1 minggu</span>
-                </div>
-                
-                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="support">
-                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">🔄</span>
+                    <div class="flex justify-between items-center">
+                        <span class="text-primary-600 font-medium">Mulai Rp 18 juta</span>
+                        <span class="text-sm text-gray-500">2-4 minggu</span>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Migrasi Data & Sistem</h3>
-                    <p class="text-gray-600 mb-4">Pindahkan data dari Excel, aplikasi lama, atau sistem lain ke Odoo dengan aman.</p>
-                    <span class="text-primary-600 font-medium">Mulai dari 3 hari</span>
                 </div>
                 
-                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="consulting">
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg">
                     <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                         <span class="text-2xl">📊</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Business Intelligence & Reporting</h3>
                     <p class="text-gray-600 mb-4">Dashboard analitik dan laporan otomatis untuk insight bisnis yang lebih baik.</p>
-                    <span class="text-primary-600 font-medium">Mulai dari 2 minggu</span>
+                    <div class="flex justify-between items-center">
+                        <span class="text-primary-600 font-medium">Mulai Rp 35 juta</span>
+                        <span class="text-sm text-gray-500">4-6 minggu</span>
+                    </div>
                 </div>
                 
-                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="support">
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg">
                     <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">🎓</span>
+                        <span class="text-2xl">🛡️</span>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Training & Support</h3>
-                    <p class="text-gray-600 mb-4">Pelatihan user, dokumentasi lengkap, dan support berkelanjutan.</p>
-                    <span class="text-primary-600 font-medium">Ongoing</span>
+                    <h3 class="text-xl font-semibold mb-3">Managed Support & Maintenance</h3>
+                    <p class="text-gray-600 mb-4">Support berkelanjutan dengan monitoring proaktif dan maintenance rutin.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-primary-600 font-medium">Rp 5 juta/bulan</span>
+                        <span class="text-sm text-gray-500">24/7 Support</span>
+                    </div>
+                </div>
+                
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">⚙️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Custom Module Development</h3>
+                    <p class="text-gray-600 mb-4">Bangun fitur khusus sesuai kebutuhan bisnis unik perusahaan Anda.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-primary-600 font-medium">Mulai Rp 25 juta</span>
+                        <span class="text-sm text-gray-500">3-6 minggu</span>
+                    </div>
                 </div>
             </div>
             
             <div class="text-center mt-12">
-                <button class="btn-primary" onclick="scrollToSection('consultation')">
-                    Diskusikan Kebutuhan Anda
-                </button>
+                <a href="services.html" class="btn-primary text-lg px-8 py-4">
+                    Lihat Semua Layanan & Harga
+                </a>
             </div>
         </div>
     </section>
@@ -888,11 +896,11 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Layanan</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white">Implementasi Odoo</a></li>
-                        <li><a href="#" class="hover:text-white">Custom Development</a></li>
-                        <li><a href="#" class="hover:text-white">Integrasi API</a></li>
-                        <li><a href="#" class="hover:text-white">Training & Support</a></li>
-                        <li><a href="#" class="hover:text-white">Migrasi Data</a></li>
+                        <li><a href="services.html" class="hover:text-white">Implementasi Odoo</a></li>
+                        <li><a href="services.html" class="hover:text-white">Custom Development</a></li>
+                        <li><a href="services.html" class="hover:text-white">Integrasi API</a></li>
+                        <li><a href="services.html" class="hover:text-white">Training & Support</a></li>
+                        <li><a href="services.html" class="hover:text-white">Migrasi Data</a></li>
                     </ul>
                 </div>
                 
