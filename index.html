@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiTrans Solutions - Official Odoo Partner | Konsultasi IT & Digital Transformation</title>
+    
+    <meta name="description" content="Official Odoo Partner yang membantu UMKM & perusahaan transformasi digital dengan ERP/CRM terintegrasi. Konsultasi gratis, implementasi profesional." />
+    <meta name="author" content="DigiTrans Solutions" />
+    <meta property="og:title" content="DigiTrans Solutions - Official Odoo Partner | Konsultasi IT & Digital Transformation" />
+    <meta property="og:description" content="Official Odoo Partner yang membantu UMKM & perusahaan transformasi digital dengan ERP/CRM terintegrasi. Konsultasi gratis, implementasi profesional." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630" />
+    <meta property="og:image:alt" content="Digital transformation and business analytics dashboard" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DigiTrans Solutions - Official Odoo Partner | Konsultasi IT & Digital Transformation" />
+    <meta name="twitter:description" content="Official Odoo Partner yang membantu UMKM & perusahaan transformasi digital dengan ERP/CRM terintegrasi. Konsultasi gratis, implementasi profesional." />
+    <meta name="twitter:site" content="@digitrans" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630" />
+
+    <link rel="canonical" href="https://digitrans-solutions.com" />
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "DigiTrans Solutions",
+          "url": "https://digitrans-solutions.com",
+          "description": "Official Odoo Partner yang membantu UMKM & perusahaan transformasi digital dengan ERP/CRM terintegrasi.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "DigiTrans Solutions"
+          }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary-600 to-accent-500 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">D</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">DigiTrans Solutions</h1>
+                        <p class="text-xs text-gray-600">Official Odoo Partner</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('home')">Beranda</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('about')">Tentang</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('services')">Layanan</a>
+                    <a href="#industries" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('industries')">Industri</a>
+                    <a href="#cases" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('cases')">Studi Kasus</a>
+                    <a href="#packages" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('packages')">Paket</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('contact')">Kontak</a>
+                    <button class="btn-primary" onclick="scrollToSection('consultation')">Konsultasi Gratis</button>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="lg:hidden flex flex-col space-y-1" onclick="toggleMobileMenu()">
+                    <span class="w-6 h-0.5 bg-gray-600 transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-gray-600 transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-gray-600 transition-all duration-300"></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden lg:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('home')">Beranda</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('about')">Tentang</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('services')">Layanan</a>
+                    <a href="#industries" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('industries')">Industri</a>
+                    <a href="#cases" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('cases')">Studi Kasus</a>
+                    <a href="#packages" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('packages')">Paket</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary-600 transition-colors" onclick="scrollToSection('contact')">Kontak</a>
+                    <button class="btn-primary w-full mt-4" onclick="scrollToSection('consultation')">Konsultasi Gratis</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient section-padding pt-32">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white animate-on-scroll">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                        Transformasi Bisnis Anda dengan <span class="text-accent-400">Odoo ERP & CRM</span> Terintegrasi
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                        Solusi Digital untuk Efisiensi, Skalabilitas, dan Pertumbuhan Berkelanjutan
+                    </p>
+                    <p class="text-lg mb-8 text-blue-200">
+                        Kami adalah <strong>Official Odoo Partner</strong> yang membantu UMKM & perusahaan menengah mengintegrasikan penjualan, inventaris, produksi, akuntansi, dan SDM dalam satu platform digital.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="btn-primary bg-accent-500 hover:bg-accent-600 text-lg px-8 py-4" onclick="scrollToSection('consultation')">
+                            👉 Jadwalkan Konsultasi Gratis Sekarang
+                        </button>
+                        <button class="btn-secondary bg-white/10 border-white text-white hover:bg-white/20" onclick="scrollToSection('cases')">
+                            Lihat Studi Kasus
+                        </button>
+                    </div>
+                </div>
+                <div class="animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Digital transformation dashboard" 
+                         class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+                <div class="animate-on-scroll">
+                    <div class="text-3xl font-bold text-accent-400">150+</div>
+                    <div class="text-blue-200">Implementasi Sukses</div>
+                </div>
+                <div class="animate-on-scroll">
+                    <div class="text-3xl font-bold text-accent-400">98%</div>
+                    <div class="text-blue-200">Kepuasan Klien</div>
+                </div>
+                <div class="animate-on-scroll">
+                    <div class="text-3xl font-bold text-accent-400">24/7</div>
+                    <div class="text-blue-200">Support</div>
+                </div>
+                <div class="animate-on-scroll">
+                    <div class="text-3xl font-bold text-accent-400">5+</div>
+                    <div class="text-blue-200">Tahun Pengalaman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-gray-50 py-16">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Apa Kata Klien Kami</h2>
+                <p class="text-gray-600">Dengar langsung dari mereka yang telah merasakan transformasi digital</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+                <div class="text-center">
+                    <div class="text-yellow-400 text-2xl mb-4">⭐⭐⭐⭐⭐</div>
+                    <blockquote id="testimonial-text" class="text-xl text-gray-700 mb-6 font-medium"></blockquote>
+                    <div class="font-semibold text-gray-900" id="testimonial-name"></div>
+                    <div class="text-gray-600" id="testimonial-industry"></div>
+                </div>
+                
+                <div class="flex justify-center mt-6 space-x-2">
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-primary-600"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Professional team collaboration" 
+                         class="rounded-2xl shadow-xl">
+                </div>
+                <div class="animate-on-scroll">
+                    <h2 class="text-4xl font-bold mb-6">Mitra Digital Anda untuk Transformasi Berkelanjutan</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        DigiTrans Solutions adalah perusahaan konsultan IT yang berfokus pada digital transformation sejak 2019. 
+                        Sebagai <strong>Official Odoo Partner</strong>, kami telah membantu 150+ perusahaan di Indonesia.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Certified Odoo Partner</h4>
+                                <p class="text-gray-600 text-sm">Resmi tersertifikasi oleh Odoo SA</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Tim Ahli Berpengalaman</h4>
+                                <p class="text-gray-600 text-sm">15+ konsultan dan developer</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Support 24/7</h4>
+                                <p class="text-gray-600 text-sm">Bantuan teknis kapan saja</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Custom Solution</h4>
+                                <p class="text-gray-600 text-sm">Disesuaikan kebutuhan bisnis</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary" onclick="scrollToSection('consultation')">
+                        Konsultasi dengan Tim Ahli
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-gray-50">
+        <div class="container-custom">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl font-bold mb-6">Layanan Konsultasi IT & Implementasi Odoo</h2>
+                <p class="text-xl text-gray-600">
+                    Kami menawarkan 20+ layanan konsultasi berbasis Odoo untuk membantu bisnis Anda bertransformasi secara digital, efisien, dan scalable.
+                </p>
+            </div>
+            
+            <!-- Service Filters -->
+            <div class="flex justify-center mb-12">
+                <div class="flex flex-wrap gap-2">
+                    <button class="filter-btn bg-primary-600 text-white px-4 py-2 rounded-lg transition-colors" onclick="filterServices('all')">Semua</button>
+                    <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition-colors" onclick="filterServices('consulting')">Consulting</button>
+                    <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition-colors" onclick="filterServices('development')">Development</button>
+                    <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition-colors" onclick="filterServices('support')">Support</button>
+                </div>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="consulting">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🏢</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Implementasi Odoo Lengkap</h3>
+                    <p class="text-gray-600 mb-4">Solusi end-to-end dari analisis bisnis hingga go-live dengan training komprehensif.</p>
+                    <span class="text-primary-600 font-medium">Mulai dari 6 minggu</span>
+                </div>
+                
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="development">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">⚙️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Custom Module Development</h3>
+                    <p class="text-gray-600 mb-4">Bangun fitur khusus sesuai kebutuhan bisnis unik perusahaan Anda.</p>
+                    <span class="text-primary-600 font-medium">Mulai dari 2 minggu</span>
+                </div>
+                
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="consulting">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🛒</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Integrasi E-commerce & Payment</h3>
+                    <p class="text-gray-600 mb-4">Sambungkan Odoo ke Shopee, Tokopedia, dan gateway payment Midtrans.</p>
+                    <span class="text-primary-600 font-medium">Mulai dari 1 minggu</span>
+                </div>
+                
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="support">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🔄</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Migrasi Data & Sistem</h3>
+                    <p class="text-gray-600 mb-4">Pindahkan data dari Excel, aplikasi lama, atau sistem lain ke Odoo dengan aman.</p>
+                    <span class="text-primary-600 font-medium">Mulai dari 3 hari</span>
+                </div>
+                
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="consulting">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Business Intelligence & Reporting</h3>
+                    <p class="text-gray-600 mb-4">Dashboard analitik dan laporan otomatis untuk insight bisnis yang lebih baik.</p>
+                    <span class="text-primary-600 font-medium">Mulai dari 2 minggu</span>
+                </div>
+                
+                <div class="service-card card-hover bg-white rounded-xl p-6 shadow-lg" data-category="support">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🎓</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Training & Support</h3>
+                    <p class="text-gray-600 mb-4">Pelatihan user, dokumentasi lengkap, dan support berkelanjutan.</p>
+                    <span class="text-primary-600 font-medium">Ongoing</span>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="btn-primary" onclick="scrollToSection('consultation')">
+                    Diskusikan Kebutuhan Anda
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl font-bold mb-6">Solusi Spesifik untuk Setiap Industri</h2>
+                <p class="text-xl text-gray-600">Kami memahami kebutuhan unik setiap industri dan menyediakan solusi yang tepat sasaran</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center">
+                    <div class="text-5xl mb-4">🏭</div>
+                    <h3 class="text-xl font-semibold mb-3">Manufaktur</h3>
+                    <p class="text-gray-600">MRP, BOM, shopfloor management, quality control, dan inventory tracking terintegrasi.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 text-center">
+                    <div class="text-5xl mb-4">🛍️</div>
+                    <h3 class="text-xl font-semibold mb-3">Ritel & E-commerce</h3>
+                    <p class="text-gray-600">POS multi-outlet, inventory real-time, omnichannel, dan loyalty program.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 text-center">
+                    <div class="text-5xl mb-4">🏢</div>
+                    <h3 class="text-xl font-semibold mb-3">Jasa & Konsultan</h3>
+                    <p class="text-gray-600">Project management, timesheet, billing by milestone, dan client portal.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-8 text-center">
+                    <div class="text-5xl mb-4">🚚</div>
+                    <h3 class="text-xl font-semibold mb-3">Logistik & Distribusi</h3>
+                    <p class="text-gray-600">Delivery management, route optimization, warehouse automation.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-8 text-center">
+                    <div class="text-5xl mb-4">🏥</div>
+                    <h3 class="text-xl font-semibold mb-3">Klinik & Layanan Kesehatan</h3>
+                    <p class="text-gray-600">Appointment booking, patient records, billing, dan inventory obat.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-8 text-center">
+                    <div class="text-5xl mb-4">🏠</div>
+                    <h3 class="text-xl font-semibold mb-3">Properti & Kontraktor</h3>
+                    <p class="text-gray-600">Project tracking, progress billing, material management, dan client communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="cases" class="section-padding bg-gray-50">
+        <div class="container-custom">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl font-bold mb-6">Lihat Bagaimana Kami Membantu Klien Sukses</h2>
+                <p class="text-xl text-gray-600">Kisah nyata transformasi digital dari berbagai industri</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+                         alt="Manufacturing facility" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-primary-600 font-medium mb-2">MANUFAKTUR</div>
+                        <h3 class="text-xl font-semibold mb-3">PT Mandiri Manufacturing</h3>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-900">Tantangan:</h4>
+                            <p class="text-gray-600 text-sm">Inventory tidak akurat, produksi tidak terjadwal, laporan manual memakan waktu 2 hari.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-900">Solusi:</h4>
+                            <p class="text-gray-600 text-sm">Implementasi Odoo Manufacturing, Inventory, dan Accounting terintegrasi.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium text-gray-900">Hasil:</h4>
+                            <ul class="text-gray-600 text-sm space-y-1">
+                                <li>✅ Efisiensi produksi naik 40%</li>
+                                <li>✅ Kesalahan inventory turun 90%</li>
+                                <li>✅ Laporan real-time dalam hitungan menit</li>
+                            </ul>
+                        </div>
+                        <button class="btn-secondary w-full">Lihat Selengkapnya</button>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+                         alt="Retail store" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-primary-600 font-medium mb-2">RETAIL</div>
+                        <h3 class="text-xl font-semibold mb-3">CV Sukses Retailindo</h3>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-900">Tantangan:</h4>
+                            <p class="text-gray-600 text-sm">5 toko offline, e-commerce terpisah, inventory tidak sinkron, customer data tersebar.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-900">Solusi:</h4>
+                            <p class="text-gray-600 text-sm">Odoo POS multi-outlet, Website e-commerce, dan CRM terintegrasi.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium text-gray-900">Hasil:</h4>
+                            <ul class="text-gray-600 text-sm space-y-1">
+                                <li>✅ Omzet online naik 150%</li>
+                                <li>✅ Inventory real-time di semua outlet</li>
+                                <li>✅ Customer retention naik 35%</li>
+                            </ul>
+                        </div>
+                        <button class="btn-secondary w-full">Lihat Selengkapnya</button>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+                         alt="Healthcare clinic" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-primary-600 font-medium mb-2">KESEHATAN</div>
+                        <h3 class="text-xl font-semibold mb-3">Klinik Sehat Bersama</h3>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-900">Tantangan:</h4>
+                            <p class="text-gray-600 text-sm">Appointment manual, rekam medis tercecer, billing tidak teratur, inventory obat kacau.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-900">Solusi:</h4>
+                            <p class="text-gray-600 text-sm">Custom Healthcare module, Appointment system, dan Pharmacy management.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium text-gray-900">Hasil:</h4>
+                            <ul class="text-gray-600 text-sm space-y-1">
+                                <li>✅ Waiting time turun 60%</li>
+                                <li>✅ Patient satisfaction naik 45%</li>
+                                <li>✅ Revenue cycle lebih efisien</li>
+                            </ul>
+                        </div>
+                        <button class="btn-secondary w-full">Lihat Selengkapnya</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="btn-primary text-lg px-8 py-4" onclick="scrollToSection('consultation')">
+                    Mau Hasil Seperti Ini? Konsultasi Gratis!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl font-bold mb-6">Pilih Paket yang Sesuai dengan Kebutuhan Bisnis Anda</h2>
+                <p class="text-xl text-gray-600">Paket fleksibel dengan investasi yang transparan</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Starter Package -->
+                <div class="card-hover bg-white border-2 border-gray-200 rounded-2xl p-8">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                        <p class="text-gray-600 mb-4">Cocok untuk UMKM & startup</p>
+                        <div class="text-4xl font-bold text-primary-600 mb-2">Rp 35 juta</div>
+                        <p class="text-gray-500 text-sm">Investasi one-time</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            3 Modul Utama (Sales, Purchase, Accounting)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-500 mr-3">❌</span>
+                            Custom Module
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-500 mr-3">❌</span>
+                            Integrasi API
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Migrasi Data Dasar
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            1 Sesi Pelatihan
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-500 mr-3">❌</span>
+                            Managed Support
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Durasi: 6 minggu
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-secondary w-full">Pilih Starter</button>
+                </div>
+                
+                <!-- Pro Package -->
+                <div class="card-hover bg-primary-50 border-2 border-primary-500 rounded-2xl p-8 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary-500 text-white px-4 py-1 rounded-full text-sm font-semibold">Paling Populer</span>
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-2">Pro</h3>
+                        <p class="text-gray-600 mb-4">Untuk perusahaan menengah</p>
+                        <div class="text-4xl font-bold text-primary-600 mb-2">Rp 80 juta</div>
+                        <p class="text-gray-500 text-sm">Investasi one-time</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            5+ Modul Lengkap
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            2-3 Custom Module
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Integrasi API & E-commerce
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Migrasi Data Lengkap
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            3 Sesi Pelatihan
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-yellow-500 mr-3">⚡</span>
+                            Managed Support (Opsional)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Durasi: 12 minggu
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-primary w-full">Pilih Pro</button>
+                </div>
+                
+                <!-- Enterprise Package -->
+                <div class="card-hover bg-white border-2 border-gray-200 rounded-2xl p-8">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+                        <p class="text-gray-600 mb-4">Solusi korporat skala besar</p>
+                        <div class="text-4xl font-bold text-primary-600 mb-2">Rp 120 juta+</div>
+                        <p class="text-gray-500 text-sm">Harga custom</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            8+ Modul Komprehensif
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅✅</span>
+                            Unlimited Custom Module
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅✅</span>
+                            Integrasi API Kompleks
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Migrasi Data Kompleks
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Pelatihan Ongoing
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Managed Support 24/7
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Durasi: 16+ minggu
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-secondary w-full">Diskusi Custom</button>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 rounded-xl p-6 text-center">
+                <p class="text-gray-700 mb-2">💡 <strong>Catatan:</strong> Harga belum termasuk lisensi Odoo (dapat dibantu daftarkan resmi)</p>
+                <p class="text-gray-600">Semua paket sudah termasuk: Setup infrastruktur, training user, dokumentasi, dan warranty 3 bulan</p>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button class="btn-primary text-lg px-8 py-4" onclick="scrollToSection('consultation')">
+                    Diskusikan Paket Kustom untuk Perusahaan Anda
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="section-padding bg-gradient-to-r from-primary-600 to-accent-500">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <h2 class="text-4xl font-bold mb-6">Kalkulator ROI Digital</h2>
+                <p class="text-xl mb-12">Hitung potensi penghematan waktu & biaya jika menggunakan Odoo</p>
+                
+                <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-left mb-2 font-medium">Jumlah Karyawan</label>
+                            <input type="number" id="employees" placeholder="contoh: 25" 
+                                   class="w-full px-4 py-3 rounded-lg text-gray-900" onchange="calculateROI()">
+                        </div>
+                        <div>
+                            <label class="block text-left mb-2 font-medium">Biaya IT Tahunan Saat Ini (Rp)</label>
+                            <input type="number" id="current-cost" placeholder="contoh: 50000000" 
+                                   class="w-full px-4 py-3 rounded-lg text-gray-900" onchange="calculateROI()">
+                        </div>
+                    </div>
+                    
+                    <div id="roi-result" class="mt-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Insights Section -->
+    <section class="section-padding bg-gray-50">
+        <div class="container-custom">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl font-bold mb-6">Insight & Tips Transformasi Digital</h2>
+                <p class="text-xl text-gray-600">Dapatkan wawasan terbaru tentang digitalisasi bisnis</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+                         alt="Business transformation" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-primary-600 font-medium mb-2">DIGITAL TRANSFORMATION</div>
+                        <h3 class="text-xl font-semibold mb-3">5 Tanda Bisnis Anda Butuh ERP seperti Odoo</h3>
+                        <p class="text-gray-600 mb-4">Kenali indikator bahwa perusahaan Anda sudah siap untuk mengadopsi sistem ERP yang terintegrasi...</p>
+                        <a href="#" class="text-primary-600 font-medium hover:underline">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+                
+                <article class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+                         alt="Data migration" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-primary-600 font-medium mb-2">IMPLEMENTATION</div>
+                        <h3 class="text-xl font-semibold mb-3">Cara Migrasi dari Excel ke Odoo Tanpa Ribet</h3>
+                        <p class="text-gray-600 mb-4">Panduan lengkap untuk memindahkan data dari spreadsheet manual ke sistem ERP yang terstruktur...</p>
+                        <a href="#" class="text-primary-600 font-medium hover:underline">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+                
+                <article class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+                         alt="SME business growth" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-primary-600 font-medium mb-2">UMKM</div>
+                        <h3 class="text-xl font-semibold mb-3">Manfaat Odoo untuk UMKM di Era Digital</h3>
+                        <p class="text-gray-600 mb-4">Bagaimana UKM dapat memanfaatkan teknologi ERP untuk bersaing dengan perusahaan besar...</p>
+                        <a href="#" class="text-primary-600 font-medium hover:underline">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="btn-secondary">Baca Selengkapnya di Blog Kami</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl font-bold mb-6">Mari Diskusi Kebutuhan Bisnis Anda</h2>
+                <p class="text-xl text-gray-600">Tim ahli kami siap membantu transformasi digital perusahaan Anda</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="animate-on-scroll">
+                    <h3 class="text-2xl font-semibold mb-6">Hubungi Kami</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-primary-600">📧</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p class="text-gray-600">info@digitrans-solutions.com</p>
+                                <p class="text-gray-600">konsultasi@digitrans-solutions.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-primary-600">📱</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">WhatsApp</h4>
+                                <p class="text-gray-600">+62 812-3456-7890</p>
+                                <button class="text-primary-600 hover:underline">Klik untuk Chat</button>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-primary-600">🕒</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Jam Kerja</h4>
+                                <p class="text-gray-600">Senin - Jumat: 08.00 - 17.00 WIB</p>
+                                <p class="text-gray-600">Sabtu: 09.00 - 14.00 WIB</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-primary-600">📍</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Alamat</h4>
+                                <p class="text-gray-600">Jakarta Selatan, Indonesia</p>
+                                <p class="text-gray-600">(Meeting by appointment)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animate-on-scroll">
+                    <form class="bg-gray-50 rounded-2xl p-8">
+                        <h3 class="text-2xl font-semibold mb-6">Kirim Pesan</h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Perusahaan</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" required>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">No. WhatsApp</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Apa yang bisa kami bantu?</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" 
+                                      placeholder="Ceritakan tentang kebutuhan atau tantangan bisnis Anda..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Consultation CTA Section -->
+    <section id="consultation" class="section-padding bg-gradient-to-r from-primary-600 to-accent-500">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto text-center text-white animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Jadwalkan Konsultasi Gratis dengan Ahli Odoo Kami</h2>
+                <p class="text-xl mb-12">
+                    Diskusikan kebutuhan bisnis Anda • Dapatkan demo sistem Odoo • Rencana implementasi & estimasi biaya • 100% tanpa komitmen
+                </p>
+                
+                <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
+                    <form onsubmit="handleConsultationForm(event)" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <input type="text" name="name" placeholder="Nama Lengkap" 
+                                       class="w-full px-4 py-3 rounded-lg text-gray-900" required>
+                            </div>
+                            <div>
+                                <input type="text" name="company" placeholder="Nama Perusahaan" 
+                                       class="w-full px-4 py-3 rounded-lg text-gray-900" required>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <input type="email" name="email" placeholder="Email" 
+                                       class="w-full px-4 py-3 rounded-lg text-gray-900" required>
+                            </div>
+                            <div>
+                                <input type="tel" name="phone" placeholder="No. WhatsApp" 
+                                       class="w-full px-4 py-3 rounded-lg text-gray-900" required>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <select name="industry" class="w-full px-4 py-3 rounded-lg text-gray-900" required>
+                                    <option value="">Pilih Industri</option>
+                                    <option value="manufacturing">Manufaktur</option>
+                                    <option value="retail">Ritel & E-commerce</option>
+                                    <option value="services">Jasa & Konsultan</option>
+                                    <option value="logistics">Logistik & Distribusi</option>
+                                    <option value="healthcare">Kesehatan</option>
+                                    <option value="property">Properti & Kontraktor</option>
+                                    <option value="other">Lainnya</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="datetime-local" name="preferred_time" 
+                                       class="w-full px-4 py-3 rounded-lg text-gray-900">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <textarea name="message" rows="4" placeholder="Apa tantangan utama bisnis Anda?" 
+                                      class="w-full px-4 py-3 rounded-lg text-gray-900"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary bg-accent-500 hover:bg-accent-600 text-lg px-8 py-4 w-full md:w-auto">
+                            🚀 Kirim Permintaan Konsultasi
+                        </button>
+                    </form>
+                    
+                    <div id="form-success" class="hidden mt-6 p-4 bg-green-500/20 border border-green-500/30 rounded-lg">
+                        <p class="text-white font-medium">✅ Permintaan konsultasi berhasil dikirim! Tim kami akan menghubungi Anda dalam 24 jam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-r from-primary-600 to-accent-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">D</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">DigiTrans Solutions</h3>
+                            <p class="text-sm text-gray-400">Official Odoo Partner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">Transformasi digital untuk bisnis yang berkelanjutan dengan solusi Odoo ERP/CRM terpercaya.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center hover:bg-primary-700">📧</a>
+                        <a href="#" class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center hover:bg-primary-700">💬</a>
+                        <a href="#" class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center hover:bg-primary-700">🔗</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Implementasi Odoo</a></li>
+                        <li><a href="#" class="hover:text-white">Custom Development</a></li>
+                        <li><a href="#" class="hover:text-white">Integrasi API</a></li>
+                        <li><a href="#" class="hover:text-white">Training & Support</a></li>
+                        <li><a href="#" class="hover:text-white">Migrasi Data</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Industri</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Manufaktur</a></li>
+                        <li><a href="#" class="hover:text-white">Ritel & E-commerce</a></li>
+                        <li><a href="#" class="hover:text-white">Jasa & Konsultan</a></li>
+                        <li><a href="#" class="hover:text-white">Logistik</a></li>
+                        <li><a href="#" class="hover:text-white">Kesehatan</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📧 info@digitrans-solutions.com</li>
+                        <li>📱 +62 812-3456-7890</li>
+                        <li>🕒 Senin-Jumat: 08.00-17.00</li>
+                        <li>📍 Jakarta Selatan, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-700 my-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2025 DigiTrans Solutions. All rights reserved.</p>
+                <div class="flex space-x-6 text-sm text-gray-400 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281234567890" target="_blank" 
+       class="floating-whatsapp w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white text-2xl shadow-lg transition-all duration-300 hover:scale-110">
+        💬
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
